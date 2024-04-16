@@ -67,7 +67,7 @@ class CCBase(SPIBase):
 
         return self.spi.xfer(buff)[1:]
 
-    def write_burst(self, address, data):
+    def write_burst(self, name, data):
         """Burst write to named address."""
 
         addr = self._get_address(name)
